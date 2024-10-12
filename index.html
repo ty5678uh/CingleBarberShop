@@ -1,162 +1,142 @@
 <!DOCTYPE html>
-<html lang="ca">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BarberShopCingle</title>
+    <title>BarberShop Cingle</title>
     <style>
-        * {
-            box-sizing: border-box;
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
             margin: 0;
             padding: 0;
         }
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f9f9f9;
-            color: #333;
-            line-height: 1.6;
-        }
         header {
-            background-color: #1f1f1f;
+            background-color: #333;
+            color: white;
             padding: 20px;
             text-align: center;
-            color: white;
-        }
-        header h1 {
-            font-size: 2.5rem;
-            font-weight: bold;
-        }
-        nav {
-            background-color: #28a745;
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-size: 1.1rem;
         }
         section {
-            padding: 40px 20px;
-            text-align: center;
-        }
-        .container {
-            max-width: 1200px;
-            margin: auto;
+            margin: 20px;
             padding: 20px;
             background-color: white;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         h2 {
-            color: #28a745;
-            font-size: 2rem;
-            margin-bottom: 20px;
+            color: #333;
         }
-        p {
-            margin-bottom: 20px;
-            font-size: 1.1rem;
-            color: #555;
+        .faq, .services, .testimonials, .team, .blog, .promotions {
+            margin-bottom: 40px;
         }
-        .cta {
-            display: inline-block;
-            background-color: #28a745;
-            color: white;
-            padding: 15px 25px;
-            font-size: 1.2rem;
-            border-radius: 5px;
-            text-decoration: none;
-            transition: background-color 0.3s ease;
-        }
-        .cta:hover {
-            background-color: #218838;
-        }
-        .contact-form {
-            margin-top: 30px;
-            text-align: left;
-        }
-        .form-group {
-            margin-bottom: 15px;
-        }
-        .form-group label {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: bold;
-        }
-        .form-group input,
-        .form-group textarea {
+        img {
             width: 100%;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
+            height: auto;
+            border-radius: 8px;
         }
-        .form-group button {
-            background-color: #28a745;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
+        .team img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
         }
-        .form-group button:hover {
-            background-color: #218838;
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
         }
-        footer {
-            background-color: #1f1f1f;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-            margin-top: 40px;
+        .container > div {
+            flex: 1;
+            min-width: 200px;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>BarberShopCingle</h1>
+    <h1>BarberShop Cingle</h1>
 </header>
 
-<nav>
-    <a href="#">Inici</a>
-    <a href="#serveis">Serveis</a>
-    <a href="#contacte">Contacte</a>
-</nav>
+<section class="faq">
+    <h2>Preguntas Frecuentes (FAQ)</h2>
+    <ul>
+        <li><strong>Horarios:</strong> Todos los días de la semana de 15h a 23h, menos el domingo.</li>
+        <li><strong>Políticas de reserva:</strong> Se recomienda reservar con 24h de antelación. Cancelaciones permitidas hasta 12h antes.</li>
+        <li><strong>Servicios ofrecidos:</strong> Cortes, afeitados, tratamientos capilares.</li>
+        <li><strong>Precios:</strong> Corte de niño 5€, hombre 7€, afeitado y cuidado de barba 5€.</li>
+    </ul>
+</section>
 
-<section id="serveis">
+<section class="services">
+    <h2>Servicios</h2>
+    <p>Ofrecemos una variedad de servicios, desde cortes de cabello hasta tratamientos especializados. Nuestros servicios incluyen:</p>
+    <ul>
+        <li>Corte de cabello</li>
+        <li>Afeitado</li>
+        <li>Tratamientos capilares</li>
+        <li>Cuidado de barba</li>
+    </ul>
+    <img src="https://example.com/haircut.jpg" alt="Corte de cabello en BarberShopCingle">
+</section>
+
+<section class="tutorials">
+    <h2>Guías y Tutoriales</h2>
+    <p>Consejos sobre cómo mantener tu estilo en casa. Aprende a cuidar tu cabello y barba con nuestros tutoriales de grooming.</p>
+</section>
+
+<section class="knowledge">
+    <h2>Base de Conocimientos</h2>
+    <p>Artículos sobre las últimas tendencias en cortes de cabello, productos recomendados, y cómo mantener tu barba impecable.</p>
+</section>
+
+<section class="promotions">
+    <h2>Promociones y Ofertas</h2>
+    <p>No te pierdas nuestras promociones especiales. Descuentos y paquetes exclusivos.</p>
+    <ul>
+        <li>Descuento de 10% en tu primer corte</li>
+        <li>Paquete afeitado + corte por solo 10€</li>
+    </ul>
+</section>
+
+<section class="testimonials">
+    <h2>Testimonios de Clientes</h2>
     <div class="container">
-        <h2>Reserva la teva cita</h2>
-        <p>Estàs preparat per a un nou estil? Reserva la teva cita amb nosaltres i obté l'atenció personalitzada que necessites.</p>
-        <p>Per a reservar, pots trucar-nos directament al número següent:</p>
-        <a href="tel:+1234567890" class="cta">Truca'ns: +1 234 567 890</a>
-        <p>També pots omplir el formulari de contacte per a qualsevol consulta, i et respondrem el més aviat possible.</p>
-
-        <div class="contact-form">
-            <h2>Formulari de contacte</h2>
-            <form action="URL_DEL_WEBHOOK_DE_MAKE" method="post">
-                <div class="form-group">
-                    <label for="nom">Nom:</label>
-                    <input type="text" id="nom" name="nom" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Correu electrònic:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="missatge">Missatge:</label>
-                    <textarea id="missatge" name="missatge" rows="4" required></textarea>
-                </div>
-                <div class="form-group">
-                    <button type="submit">Enviar consulta</button>
-                </div>
-            </form>
+        <div>
+            <img src="https://example.com/client1.jpg" alt="Testimonio de cliente">
+            <p>"Increíble corte, siempre vuelvo por la atención y la calidad."</p>
+        </div>
+        <div>
+            <img src="https://example.com/client2.jpg" alt="Testimonio de cliente">
+            <p>"El mejor lugar para el cuidado de la barba, ¡recomendado 100%!"</p>
         </div>
     </div>
 </section>
 
-<footer>
-    <p>&copy; 2024 BarberShopCingle. Tots els drets reservats.</p>
-</footer>
+<section class="gallery">
+    <h2>Galería de Estilos</h2>
+    <img src="https://example.com/styles.jpg" alt="Galería de estilos de BarberShopCingle">
+</section>
+
+<section class="blog">
+    <h2>Blog</h2>
+    <p>Artículos sobre las últimas tendencias en barbería y eventos especiales.</p>
+</section>
+
+<section class="team">
+    <h2>Conoce a Nuestro Equipo</h2>
+    <div class="container">
+        <div>
+            <img src="https://example.com/barber1.jpg" alt="Barbero 1">
+            <p><strong>Juan Pérez</strong> - Especialista en cortes clásicos. <a href="#">Instagram</a></p>
+        </div>
+        <div>
+            <img src="https://example.com/barber2.jpg" alt="Barbero 2">
+            <p><strong>Carlos García</strong> - Experto en barbas y afeitados. <a href="#">Instagram</a></p>
+        </div>
+    </div>
+</section>
 
 </body>
 </html>
+
